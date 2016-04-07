@@ -31,7 +31,7 @@ exports.handler = (event, context, callback) => {
                     Container: 'auto'
                 },
                 Outputs: [{
-                    Key: srcKey,
+                    Key: newKey + '.mp4',
                     ThumbnailPattern: '{count}-' + newKey,
                     PresetId: '1460064928126-si3iuw',
                     Rotate: 'auto'
