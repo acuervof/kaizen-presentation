@@ -18,8 +18,7 @@ exports.handler = (event, context, callback) => {
         CopySource: srcBucket +'/'+ srcKey
     }, function(err, data) {
       if (err) {
-          console.log(err);
-          callback(err);
+          callback('Error when copying ' + err.message);
       } else {
           callback();
       }
